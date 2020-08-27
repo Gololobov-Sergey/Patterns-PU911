@@ -1,4 +1,4 @@
-#pragma once
+п»ї#pragma once
 #include<string>
 #include<iostream>
 
@@ -19,11 +19,11 @@ class Track : public Transport
 public:
 	void delivery(string adress) const override
 	{
-		cout << " груз доставлен по адресу: " << adress << endl;
+		cout << " РіСЂСѓР· РґРѕСЃС‚Р°РІР»РµРЅ РїРѕ Р°РґСЂРµСЃСѓ: " << adress << endl;
 	}
 	string name() const
 	{
-		return "Задействован новый грузовик,";
+		return "Р—Р°РґРµР№СЃС‚РІРѕРІР°РЅ РЅРѕРІС‹Р№ РіСЂСѓР·РѕРІРёРє,";
 	}
 };
 
@@ -32,11 +32,11 @@ class Ship : public Transport
 {
 	void delivery(string adress)const override
 	{
-		cout << " груз доставлен по адресу: " << adress << endl;
+		cout << " РіСЂСѓР· РґРѕСЃС‚Р°РІР»РµРЅ РїРѕ Р°РґСЂРµСЃСѓ: " << adress << endl;
 	}
 	string name() const
 	{
-		return "Задействован новый пароход,";
+		return "Р—Р°РґРµР№СЃС‚РІРѕРІР°РЅ РЅРѕРІС‹Р№ РїР°СЂРѕС…РѕРґ,";
 	}
 };
 
@@ -45,11 +45,11 @@ class Plane : public Transport
 {
 	void delivery(string adress)const override
 	{
-		cout << " груз доставлен по адресу: " << adress << endl;
+		cout << " РіСЂСѓР· РґРѕСЃС‚Р°РІР»РµРЅ РїРѕ Р°РґСЂРµСЃСѓ: " << adress << endl;
 	}
 	string name() const
 	{
-		return "Задействован новый самолёт,";
+		return "Р—Р°РґРµР№СЃС‚РІРѕРІР°РЅ РЅРѕРІС‹Р№ СЃР°РјРѕР»С‘С‚,";
 	}
 };
 
@@ -92,3 +92,35 @@ public:
 		return new Plane();
 	}
 };
+
+
+
+	/*Creator* creator = new TrackCreator;
+	Transport* track = creator->create();
+	track->delivery("IT STEP");
+
+
+	creator = new ShipCreator;
+	Transport* ship = creator->create();
+	ship->delivery("MorPort");*/
+
+
+	/*Transport* transport;
+	Creator* creator;
+	int n;
+	cout << "Type transport: 1-Track, 2-Ship, 3-Plane ";
+	cin >> n;
+	switch (n)
+	{
+	case 2:
+		creator = new ShipCreator;
+		break;
+	case 3:
+		creator = new PlaneCreator;
+		break;
+	default:
+		creator = new TrackCreator;
+		break;
+	}
+	transport = creator->create();
+	transport->delivery("РЅР° РґРµСЂРµРІРЅСЋ РґРµРґСѓС€РєРµ");*/
