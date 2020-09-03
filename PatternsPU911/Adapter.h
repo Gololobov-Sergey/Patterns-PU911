@@ -1,4 +1,4 @@
-#pragma once
+ï»¿#pragma once
 
 #include<string>
 #include<iostream>
@@ -21,7 +21,7 @@ namespace Adapter {
 	public:
 		void drive()
 		{
-			cout << "Ìàøèíà åäåò ïî äîðîãå" << endl;
+			cout << "ÐœÐ°ÑˆÐ¸Ð½Ð° ÐµÐ´ÐµÑ‚ Ð¿Ð¾ Ð´Ð¾Ñ€Ð¾Ð³Ðµ" << endl;
 		}
 	};
 
@@ -41,7 +41,7 @@ namespace Adapter {
 	public:
 		void move()
 		{
-			cout << "Âåðáëþä èä¸ò ïî ïóñòûíå" << endl;
+			cout << "Ð’ÐµÑ€Ð±Ð»ÑŽÐ´ Ð¸Ð´Ñ‘Ñ‚ Ð¿Ð¾ Ð¿ÑƒÑÑ‚Ñ‹Ð½Ðµ" << endl;
 		}
 	};
 

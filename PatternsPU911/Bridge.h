@@ -1,4 +1,4 @@
-#pragma once
+ï»¿#pragma once
 #include<string>
 #include<iostream>
 
@@ -17,11 +17,11 @@ class CPPLanguage : public ILanguage
 public:
 	void build() override
 	{
-		cout << "Ñ ïîìîùüþ êîìïèëÿòîðà c++ êîìïèëèðóåì ïðîãðàììó â áèíàðíûé êîä" << endl;
+		cout << "Ð¡ Ð¿Ð¾Ð¼Ð¾Ñ‰ÑŒÑŽ ÐºÐ¾Ð¼Ð¿Ð¸Ð»ÑÑ‚Ð¾Ñ€Ð° c++ ÐºÐ¾Ð¼Ð¿Ð¸Ð»Ð¸Ñ€ÑƒÐµÐ¼ Ð¿Ñ€Ð¾Ð³Ñ€Ð°Ð¼Ð¼Ñƒ Ð² Ð±Ð¸Ð½Ð°Ñ€Ð½Ñ‹Ð¹ ÐºÐ¾Ð´" << endl;
 	}
 	void execute() override
 	{
-		cout << "Çàïóñêàåì èñïîëíÿåìûé ôàéë" << endl;
+		cout << "Ð—Ð°Ð¿ÑƒÑÐºÐ°ÐµÐ¼ Ð¸ÑÐ¿Ð¾Ð»Ð½ÑÐµÐ¼Ñ‹Ð¹ Ñ„Ð°Ð¹Ð»" << endl;
 	}
 };
 
@@ -30,11 +30,11 @@ class HTMLLanguage : public ILanguage
 public:
 	void build() override
 	{
-		cout << "Ïèøåò êîä â òåêñòîâîì ðåäàêòîðå" << endl;
+		cout << "ÐŸÐ¸ÑˆÐµÑ‚ ÐºÐ¾Ð´ Ð² Ñ‚ÐµÐºÑÑ‚Ð¾Ð²Ð¾Ð¼ Ñ€ÐµÐ´Ð°ÐºÑ‚Ð¾Ñ€Ðµ" << endl;
 	}
 	void execute() override
 	{
-		cout << "Çàïóñêàåò ñòðàíèöó â áðàóçåðå" << endl;
+		cout << "Ð—Ð°Ð¿ÑƒÑÐºÐ°ÐµÑ‚ ÑÑ‚Ñ€Ð°Ð½Ð¸Ñ†Ñƒ Ð² Ð±Ñ€Ð°ÑƒÐ·ÐµÑ€Ðµ" << endl;
 	}
 };
 
@@ -62,7 +62,7 @@ public:
 	FreelanceProgrammer(ILanguage* lang):Programmer(lang){}
 	void getSalary() override
 	{
-		cout << "Ïîëó÷àåì îïëàòó çà âûïîëíåííûé çàêàç" << endl;
+		cout << "ÐŸÐ¾Ð»ÑƒÑ‡Ð°ÐµÐ¼ Ð¾Ð¿Ð»Ð°Ñ‚Ñƒ Ð·Ð° Ð²Ñ‹Ð¿Ð¾Ð»Ð½ÐµÐ½Ð½Ñ‹Ð¹ Ð·Ð°ÐºÐ°Ð·" << endl;
 	}
 };
 
@@ -72,7 +72,7 @@ public:
 	OfficeProgrammer(ILanguage* lang) :Programmer(lang) {}
 	void getSalary() override
 	{
-		cout << "Ïîëó÷àåì çàðïëàòó â êîíöå ìåñÿöà" << endl;
+		cout << "ÐŸÐ¾Ð»ÑƒÑ‡Ð°ÐµÐ¼ Ð·Ð°Ñ€Ð¿Ð»Ð°Ñ‚Ñƒ Ð² ÐºÐ¾Ð½Ñ†Ðµ Ð¼ÐµÑÑÑ†Ð°" << endl;
 	}
 };
 

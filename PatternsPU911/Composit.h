@@ -1,4 +1,4 @@
-#pragma once
+﻿#pragma once
 #include<string>
 #include<iostream>
 #include<list>
@@ -20,7 +20,7 @@ namespace Composit {
 		{
 			for (size_t i = 0; i < t; i++)
 			{
-				cout << "\t";
+				cout << "    ";
 			}
 			cout << name << endl; 
 		}
@@ -39,11 +39,12 @@ namespace Composit {
 		}
 		void print()
 		{
-			t++;
+			
 			for (size_t i = 0; i < t; i++)
 			{
-				cout << "\t";
+				cout << "    ";
 			}
+			t++;
 			cout << "Directory: " << name << endl;
 			//cout << "Content:" << endl;
 			
@@ -62,3 +63,21 @@ namespace Composit {
 	};
 }
 
+//Composit::Component* filesystem = new Composit::Directory("Файловая система");
+//Composit::Component* discC = new Composit::Directory("Диск С");
+//Composit::Component* folder1 = new Composit::Directory("Папка 1");
+//Composit::Component* folder2 = new Composit::Directory("Папка 2");
+//Composit::Component* folder3 = new Composit::Directory("Папка 3");
+//Composit::Component* file1 = new Composit::File("Файл 1");
+//Composit::Component* file2 = new Composit::File("Файл 2");
+//Composit::Component* file3 = new Composit::File("Файл 3");
+//
+//filesystem->add(discC);
+//discC->add(folder1);
+//discC->add(folder2);
+//discC->add(file1);
+//folder1->add(folder3);
+//folder3->add(file2);
+//folder3->add(file3);
+//
+//filesystem->print();
