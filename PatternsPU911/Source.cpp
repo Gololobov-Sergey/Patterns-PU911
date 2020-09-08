@@ -12,6 +12,9 @@
 #include"Flyweight.h"
 #include"Proxy.h"
 #include"State.h"
+#include"ChainOfResponsibility.h"
+#include"Command.h"
+#include"Mediator.h"
 
 using namespace std;
 
@@ -21,16 +24,8 @@ int main()
 {
 	setlocale(0, "");
 
-	Water* water = new Water(new SolidWaterState);
-	water->heat();
-	water->heat();
-	water->heat();
-	water->heat();
-	water->frost();
-	water->frost();
-	water->frost();
-	water->frost();
 
+	
 
 	system("pause");
 }
