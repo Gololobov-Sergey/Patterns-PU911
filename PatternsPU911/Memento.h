@@ -1,4 +1,4 @@
-#pragma once
+ï»¿#pragma once
 #include<string>
 #include<iostream>
 #include<vector>
@@ -17,12 +17,12 @@ public:
 	{
 		if (patrons > 0)
 		{
-			cout << "Ïðîèçâåä¸í âûñòðåë" << endl;
-			cout << "Îñòàëîñü " << --patrons << " ïàòðîíîâ" << endl;
+			cout << "ÐŸÑ€Ð¾Ð¸Ð·Ð²ÐµÐ´Ñ‘Ð½ Ð²Ñ‹ÑÑ‚Ñ€ÐµÐ»" << endl;
+			cout << "ÐžÑÑ‚Ð°Ð»Ð¾ÑÑŒ " << --patrons << " Ð¿Ð°Ñ‚Ñ€Ð¾Ð½Ð¾Ð²" << endl;
 		}
 		else
 		{
-			cout << "Ïàòðîíîâ áîëüøå íåò" << endl;
+			cout << "ÐŸÐ°Ñ‚Ñ€Ð¾Ð½Ð¾Ð² Ð±Ð¾Ð»ÑŒÑˆÐµ Ð½ÐµÑ‚" << endl;
 		}
 	}
 	HeroMemento* saveMemento();
@@ -49,7 +49,7 @@ public:
 
 HeroMemento* Hero::saveMemento()
 {
-	cout << "Ñîõðàíåíèå èãðû: ïàòðîíîâ " << patrons << ", æèçíè " << hp << endl;
+	cout << "Ð¡Ð¾Ñ…Ñ€Ð°Ð½ÐµÐ½Ð¸Ðµ Ð¸Ð³Ñ€Ñ‹: Ð¿Ð°Ñ‚Ñ€Ð¾Ð½Ð¾Ð² " << patrons << ", Ð¶Ð¸Ð·Ð½Ð¸ " << hp << endl;
 	return new HeroMemento(patrons, hp);
 }
 
@@ -57,7 +57,7 @@ void Hero::restoreMemento(HeroMemento* memento)
 {
 	this->patrons = memento->getPatrons();
 	this->hp = memento->getHP();
-	cout << "Âîñòàíîâëåíèå èãðû: ïàòðîíîâ " << patrons << ", æèçíè " << hp << endl;
+	cout << "Ð’Ð¾ÑÑ‚Ð°Ð½Ð¾Ð²Ð»ÐµÐ½Ð¸Ðµ Ð¸Ð³Ñ€Ñ‹: Ð¿Ð°Ñ‚Ñ€Ð¾Ð½Ð¾Ð² " << patrons << ", Ð¶Ð¸Ð·Ð½Ð¸ " << hp << endl;
 }
 
 

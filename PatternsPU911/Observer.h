@@ -1,4 +1,4 @@
-#pragma once
+п»ї#pragma once
 #include<string>
 #include<iostream>
 #include<vector>
@@ -67,7 +67,7 @@ public:
 	}
 	void update(Product* p)
 	{
-		cout << "Сообщение для " << name << " по продукту " << p->getName() << " новая цена " << p->getPrice() << endl;
+		cout << "РЎРѕРѕР±С‰РµРЅРёРµ РґР»СЏ " << name << " РїРѕ РїСЂРѕРґСѓРєС‚Сѓ " << p->getName() << " РЅРѕРІР°СЏ С†РµРЅР° " << p->getPrice() << endl;
 	}
 };
 
