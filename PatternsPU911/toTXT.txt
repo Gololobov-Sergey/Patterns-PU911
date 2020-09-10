@@ -1,0 +1,4 @@
+Point X = 2 Y = 5
+Circle X = 3 Y = 6 R = 7
+Rectangle P1(1, 8), P2(7, 4)
+Circle X = 3 Y = 6 R = 7
